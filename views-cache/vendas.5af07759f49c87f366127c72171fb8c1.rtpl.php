@@ -1,0 +1,93 @@
+<?php if(!class_exists('Rain\Tpl')){exit;}?><div class="product-big-title-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="product-bit-title text-center">
+					<h2>Mais Vendidos</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main" align="center">  
+	<ul class="cards">
+		<li class="cards_item">
+			<div class="card">
+				<div class="card_image"><a href="categories/4"><img class="card-img rounded" src="/res/site/img/produtos/escala90120.jpg"></a></div>
+				<div class="card_content">
+					<div class="card-img-overlay rounded">
+						<h2 class="card-title-danger bg-white border rounded">Impressão Fotográfica</h2>		
+						<p class="card-text-danger bg-white border rounded">Trabalhamos com impressão fotográfica profissional e com tamanhos variados</p>						
+						<div><a class="caption button-radius" href="categories/4" style="margin-top: 38px;"><span class="icon"></span>Saiba Mais</a></div> 
+					</div>
+				</div>
+			</li>
+			<li class="cards_item">
+				<div class="card">
+					<div class="card_image"><a href="/maiortamanho"><img class="card-img rounded" src="/res/site/img/produtos/escala900120.jpg"></a></div>
+					<div class="card_content">
+						<div class="card-img-overlay rounded">
+							<h2 class="card-title-danger bg-white border rounded">Ampliação Fotográfica</h2>	
+							<p class="card-text-danger bg-white border rounded">Trabalhamos com impressão fotográfica profissional   e com tamanhos variados para fotos grandes</p>				
+							<div><a class="caption button-radius" href="/maiortamanho" style="margin-top: 38px;"><span class="icon"></span>Saiba Mais</a></div> 
+						</div>
+					</div>
+				</li>
+				<?php $counter1=-1;  if( isset($products) && ( is_array($products) || $products instanceof Traversable ) && sizeof($products) ) foreach( $products as $key1 => $value1 ){ $counter1++; ?>
+
+				<li class="cards_item">
+					<div class="card">
+						<div class="card_image"><a href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>"><img class="card-img rounded" src="<?php echo htmlspecialchars( $value1["desphoto"], ENT_COMPAT, 'UTF-8', FALSE ); ?>"></a></div>
+						<div class="card_content">
+							<div class="card-img-overlay rounded">
+								<h2 class="card-title-danger bg-white border rounded"><?php echo htmlspecialchars( $value1["desproduct"], ENT_COMPAT, 'UTF-8', FALSE ); ?></h2>
+								<p class="card-text-danger bg-white border rounded"><?php echo htmlspecialchars( $value1["vlheight"], ENT_COMPAT, 'UTF-8', FALSE ); ?></p><br><br>
+								<div><a class="caption button-radius" href="/products/<?php echo htmlspecialchars( $value1["desurl"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" style="margin-top: -28px;"><span class="icon"></span>Saiba Mais</a></div> 
+							</div>
+						</div>
+					</li> 
+					<?php } ?>  
+				</ul>
+			</div><br><br>
+			<div class="product-big-title-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="product-bit-title text-center">
+								<h2>Outro Modelos</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><br><br>
+			<div class="main" align="center">
+				<h2 class="card-title-danger bg-white border rounded">Impressão Fotográfica</h2>				
+				<a class="caption button-radius" href="/maisvendidos" style="margin-top: 38px;"><span class="icon"></span>Mais Populares</a> 
+				<a class="caption button-radius" href="/menortamanho" style="margin-top: 38px;"><span class="icon"></span>Menor Tamanho</a> 
+				<a class="caption button-radius" href="/maiortamanho" style="margin-top: 38px;"><span class="icon"></span>Maior Tamanho</a> <br><br><br>
+				<h2 class="card-title-danger bg-white border rounded">Foto Produtos</h2>
+				<a class="caption button-radius" href="/canecas" style="margin-top: 38px;"><span class="icon"></span>Canecas</a>
+				<a class="caption button-radius" href="/box" style="margin-top: 38px;"><span class="icon"></span>Box para DVD, Pen Drive e Pen Card</a>
+				<a class="caption button-radius" href="/pendrive" style="margin-top: 38px;"><span class="icon"></span>Pen Drive e Pen Card</a>
+				<a class="caption button-radius" href="/caixacubinhos" style="margin-top: 38px;"><span class="icon"></span>Caixa de Cubinhos</a><br>
+				<a class="caption button-radius" href="/fotoima" style="margin-top: 38px;"><span class="icon"></span>Foto com Imã e Tag Fotográfica</a>
+				<a class="caption button-radius" href="/fotopvc" style="margin-top: 38px;"><span class="icon"></span>Foto com PVC</a>
+				<a class="caption button-radius" href="/estojomaletaluva" style="margin-top: 38px;"><span class="icon"></span>Estojo Maleta e Luva</a> <br><br><br>
+				<h2 class="card-title-danger bg-white border rounded">Painel em MDF</h2>
+				<a class="caption button-radius" href="/painelcomum" style="margin-top: 38px;"><span class="icon"></span>Painel Comum</a>
+				<a class="caption button-radius" href="/painelcanto" style="margin-top: 38px;"><span class="icon"></span>Painel Com Canto Arredondado</a>
+				<a class="caption button-radius" href="/painelredondo" style="margin-top: 38px;"><span class="icon"></span>Painel Redondo</a>
+				<a class="caption button-radius" href="/paineloval" style="margin-top: 38px;"><span class="icon"></span>Painel Oval</a> <br><br><br>
+				<h2 class="card-title-danger bg-white border rounded">Álbuns</h2>
+				<a class="caption button-radius" href="/kitreplica" style="margin-top: 38px;"><span class="icon"></span>Kit de Réplicas</a>
+				<a class="caption button-radius" href="/albumeasy" style="margin-top: 38px;"><span class="icon"></span>Álbum Easy</a>
+				<a class="caption button-radius" href="/albumsanfonado" style="margin-top: 38px;"><span class="icon"></span>Álbum Sanfonado</a>
+				<a class="caption button-radius" href="/albumplastico" style="margin-top: 38px;"><span class="icon"></span>Álbum de Plástico</a> 
+				<a class="caption button-radius" href="/albumscrapbook" style="margin-top: 38px;"><span class="icon"></span>Álbum Scrapbook</a> 
+				<a class="caption button-radius" href="/albumflat" style="margin-top: 38px;"><span class="icon"></span>Álbum Flat</a> 
+				<a class="caption button-radius" href="/albumjanela" style="margin-top: 38px;"><span class="icon"></span>Álbum Janela</a> 
+				<a class="caption button-radius" href="/albummairalombardi" style="margin-top: 38px;"><span class="icon"></span>Álbum Maira Lombardi</a> 
+				<a class="caption button-radius" href="/albumlinhaacrilica" style="margin-top: 38px;"><span class="icon"></span>Álbum Linha Acrílica</a>
+				<a class="caption button-radius" href="/albumfotografica" style="margin-top: 38px;"><span class="icon"></span>Álbum Linha Fotográfica</a> 
+				<a class="caption button-radius" href="/laminasalbuns" style="margin-top: 38px;"><span class="icon"></span>Lâminas para Álbuns</a> 
+			</div><br><br>

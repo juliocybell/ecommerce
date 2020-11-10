@@ -1,0 +1,50 @@
+<div class="product-big-title-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="product-bit-title text-center">
+                    <h2>Menores Tamanhos</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br>
+<div class="container mt-5">
+  <div class="row pt-2 justify-content-center">      
+    <div class="box-body no-padding">
+              <table class="table table-striped">
+                <thead>
+                  <tr>                    
+                    <th>Produto</th> 
+                    <th></th>                                      
+                    <th>Descrição</th>
+                    <th></th>
+                    <th>Preço</th> 
+                    <th></th>                                    
+                    <th style="width: 140px">&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {loop="$products"}
+                  <tr>                    
+                    <td>{$value.desproduct}</td>   
+                    <td></td>                                  
+                    <td style="font-size: 12px;">{$value.vlheight}</td> 
+                    <td></td>
+                    <td class="text-danger" style="font-size: 22px;">R$ {function="formatPrice($value.vlprice)"}</td>   
+                    <td></td>                       
+                    <td>
+                      <div class="product-option-shop">
+                        <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70" rel="nofollow" href="/cart/{$value.idproduct}/add">Comprar</a>
+                    </div> 
+                    </td>
+                  </tr>
+                  {/loop}
+                </tbody>
+              </table>
+            </div>
+    
+  </div>
+ 
+
+<br><br><br><br>
